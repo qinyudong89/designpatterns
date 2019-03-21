@@ -7,5 +7,6 @@ package com.example.designpatterns.singleton;
  * @date
  */
 public enum  Enums {
+
     INSTANCE;
 }
