@@ -1,17 +1,17 @@
 package com.example.designpatterns;
 
-import com.example.designpatterns.singleton.Enums;
+import com.example.designpatterns.singleton.EnumSingleton;
 
 /**
  * @author yu dong qin
- * @ClassName: 单例测试类
- * @Description: (这里用一句话描述这个类的作用)
+ * @ClassName: 测试单例在多线程环境下，是否线程安全
+ * @Description: 测试类
  * @date
  */
 public class MyThread extends Thread {
     @Override
     public void run() {
-        System.out.println(Enums.INSTANCE.hashCode() + " 线程ID：" + Thread.currentThread().getId());
+        System.out.println(EnumSingleton.INSTANCE.hashCode() + " 线程ID：" + Thread.currentThread().getId());
     }
 
     public static void main(String[] args) {

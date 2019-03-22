@@ -8,15 +8,15 @@ package com.example.designpatterns.singleton;
  * 2、缺点，在没有实例没有用到时候，也会先创建
  * @date
  */
-public class HungryMode {
-    private static HungryMode instance ;
+public class HungrySingleton {
+    private static HungrySingleton instance ;
 
-    public static HungryMode getInstance(){
+    public static HungrySingleton getInstance(){
         if (instance == null){
-            instance = new HungryMode();
+            instance = new HungrySingleton();
         }
         return instance;
     }
     //禁止外部创建实例
-    private HungryMode(){}
+    private HungrySingleton(){}
 }

@@ -16,13 +16,13 @@ package com.example.designpatterns.singleton;
  * 5、双重检查避免，实例不唯一
  * @date
  */
-public class LazyMode {
-    private volatile static  LazyMode INSTANCE ;
-    public static LazyMode getInstance(){
+public class LazySingleton {
+    private volatile static LazySingleton INSTANCE ;
+    public static LazySingleton getInstance(){
         if (INSTANCE == null){
-            synchronized(LazyMode.class){
+            synchronized(LazySingleton.class){
                 if (INSTANCE == null){
-                    INSTANCE = new LazyMode();
+                    INSTANCE = new LazySingleton();
                 }
             }
         }
@@ -30,6 +30,6 @@ public class LazyMode {
     }
 
     //禁止外部创建实例
-    private LazyMode(){}
+    private LazySingleton(){}
 
 }
