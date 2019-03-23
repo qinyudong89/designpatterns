@@ -8,16 +8,16 @@ import com.example.designpatterns.singleton.EnumSingleton;
  * @Description: 测试类
  * @date
  */
-public class MyThread extends Thread {
+public class SimpleTest extends Thread {
     @Override
     public void run() {
         System.out.println(EnumSingleton.INSTANCE.hashCode() + " 线程ID：" + Thread.currentThread().getId());
     }
 
     public static void main(String[] args) {
-        MyThread myThread;
+        SimpleTest myThread;
         for (int i = 0; i < 50; i++) {
-            myThread = new MyThread();
+            myThread = new SimpleTest();
             myThread.start();
         }
     }
