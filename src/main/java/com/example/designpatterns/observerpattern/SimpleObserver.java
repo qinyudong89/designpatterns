@@ -14,11 +14,12 @@ public class SimpleObserver implements Observer {
        observable.addObserver(this);
     }
 
+    //arg,为任意对象，用于传递参数
     @Override
     public void update(Observable o, Object arg) {
         SimpleObservable observable = (SimpleObservable) o;
         int data = ((SimpleObservable) o).getData();
-        System.out.println("数据改变了" + data);
+        System.out.println("数据改变了" + arg);
     }
 
 

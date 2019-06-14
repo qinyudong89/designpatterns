@@ -2,7 +2,6 @@ package com.example.designpatterns;
 
 import com.example.designpatterns.factorymethod.BlackTeaFactory;
 import com.example.designpatterns.factorymethod.GreenTeaFactory;
-import com.example.designpatterns.factorymethod.MethodFactory;
 import com.example.designpatterns.factorymethod.TeaFactory;
 
 /**
