@@ -30,4 +30,4 @@ public class Iphone6Plus {
         this.lightning = lightning;
     }
 
-    }
+}

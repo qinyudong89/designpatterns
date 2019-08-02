@@ -15,7 +15,9 @@ public class AdapterpatternTest {
     public static void main(String[] args) {
         Iphone6Plus iphone6Plus = new Iphone6Plus(new AppleCharger());
         iphone6Plus.charge();
-        System.out.println("==============黄金分割线================");
+
+        System.out.println("------------黄金分割线------------");
+
         Adapter adapter  = new Adapter(new AndroidCharger());
         Iphone6Plus newIphone = new Iphone6Plus();
         newIphone.setLightning(adapter);
